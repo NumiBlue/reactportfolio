@@ -1,14 +1,15 @@
-import About from './components/About';
-import './App.css';
-import Navbar from './components/Navbar';
-
-
+import About from "./components/About";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Intro from "./components/intro/Intro";
 
 function App() {
   return (
     <div>
-    <Navbar/>
-    <About/>
+      <Intro />
+      <Navbar />
+
+      <About />
     </div>
   );
 }

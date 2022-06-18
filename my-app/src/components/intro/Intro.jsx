@@ -1,8 +1,8 @@
 const Intro = () => {
     return (
         <div>
-            this is intro
+            This is intro
         </div>
     )
 }
-export default Intro 
+export default Intro

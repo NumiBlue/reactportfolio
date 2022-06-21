@@ -1,0 +1,11 @@
+.n {
+display: flex;
+}
+
+.n-left {
+flex: 1;
+}
+
+.n-right {
+flex: 1;
+}

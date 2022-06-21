@@ -1,7 +1,10 @@
+import "./intro.css";
+
 const Intro = () => {
     return (
-        <div>
-            This is intro
+        <div classname = "n">
+            <n className = "n-left">left</n>
+            <n classname = "n-right">right</n>
         </div>
     )
 }

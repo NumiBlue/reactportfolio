@@ -13,6 +13,11 @@ const Intro = () => {
                         <h1>Ciara Hargis.
                           </h1>
                           </div>
+                          <div className="n-title">
+                            <div className="n-title-wrapper">
+                                Full-Stack Web Developer
+                            </div>
+                          </div>
                     </h2>
                 </div>
             </n>

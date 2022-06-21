@@ -1,5 +1,7 @@
 .n {
 display: flex;
+height: 100vh;
+background-color: bisque;
 }
 
 .n-left {
@@ -8,4 +10,8 @@ flex: 1;
 
 .n-right {
 flex: 1;
+}
+
+.n-left-wrapper {
+    padding: 50px;
 }

@@ -4,7 +4,7 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
-import './App.css';
+import "./index.css";
 
 function App() {
   return (

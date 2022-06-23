@@ -32,6 +32,12 @@ const Navbar = () => {
         <li>Resume</li>
         <li>Contact</li>
       </ul>
+     
+     {/*social icons*/}
+      <div className='hidden'>
+
+      </div>
+
 
     </div>
   );

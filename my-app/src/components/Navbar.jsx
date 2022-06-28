@@ -9,8 +9,7 @@ import {
 } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-// import Logo from '../assets/wes-hicks-G2W_8eagxNQ-unsplash-2.jpg';
-
+import Image from '../assets/myImage.png';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
@@ -18,9 +17,9 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-gradient-to-r from-indigo-800 via bg-red-800 to bg-yellow-600 text-gray-300'>
-      {/* <div>
-        <img src={Logo} alt="Logo" style={{width: '350px'}}/>
-        </div> */}
+       <div>
+        <img src={Image} alt='Self Image' style={{ width: '50px' }} />
+      </div>
 
       {/* menu */}
       <ul className='hidden md:flex'>

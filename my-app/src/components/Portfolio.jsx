@@ -1,4 +1,6 @@
 import React from "react";
+import WorkImg from "./assets/Pomodorian.jpg"
+import SprayCan from ".assets/SprayCan.png"
 
 const Portfolio = () => {
   return (
@@ -17,8 +19,33 @@ const Portfolio = () => {
         </div>
 
         {/* Container */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4"></div>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+{/* Grid Item */}
+<div
+            style={{ backgroundImage: `url(${WorkImg})` }}
+            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+          >
+{/* Hover Effects */}
+<div className='opacity-0 group-hover:opacity-100'>
+              <span className='text-2xl font-bold text-white tracking-wider'>
+                Pomodorian App
+              </span>
+              <div className='pt-8 text-center'>
+                <a href='https://dieterichelizabeth.github.io/project-mixtape-pivot/'>
+                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                    Demo
+                  </button>
+                </a>
+                <a href='https://github.com/dieterichelizabeth/project-mixtape-pivot/tree/ciara'>
+                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                    Code
+                  </button>
+                </a>
+              </div>
+        </div>
       </div>
+    </div>
+    </div>
     </div>
   );
 };

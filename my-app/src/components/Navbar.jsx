@@ -39,9 +39,9 @@ const Navbar = () => {
       </ul>
 
     {/* hamburger */}
-    <div className='hidden'>
-      <FaBars />
-    </div>
+    <div onClick={handleClick} className='md:hidden z-10'>
+        {!nav ? <FaBars /> : <FaTimes />}
+      </div>
     {/* mobile menu */}
     <ul className='hidden'>
         <li>Home</li>

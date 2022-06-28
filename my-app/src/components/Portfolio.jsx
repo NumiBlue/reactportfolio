@@ -28,7 +28,7 @@ const Portfolio = () => {
 {/* Hover Effects */}
 <div className='opacity-0 group-hover:opacity-100'>
               <span className='text-2xl font-bold text-white tracking-wider'>
-                Pomodorian App
+                Pomodorian Application 
               </span>
               <div className='pt-8 text-center'>
                 <a href='https://dieterichelizabeth.github.io/project-mixtape-pivot/'>
@@ -44,6 +44,31 @@ const Portfolio = () => {
               </div>
         </div>
       </div>
+
+      <div
+            style={{ backgroundImage: `url(${SprayCan})` }}
+            className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+          >
+            {/* Hover Effects */}
+            <div className='opacity-0 group-hover:opacity-100'>
+              <span className='text-2xl font-bold text-white tracking-wider'>
+                Graffiti Social Media Application
+              </span>
+              <div className='pt-8 text-center'>
+                <a href='https://enigmatic-cliffs-72783.herokuapp.com'>
+                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                    Demo
+                  </button>
+                </a>
+                <a href='https://github.com/jonathanprill/spray-can-project-2'>
+                  <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+
+    </div>
     </div>
     </div>
     </div>

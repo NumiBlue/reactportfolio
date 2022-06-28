@@ -10,7 +10,7 @@ import {
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 // import Logo from '../assets/wes-hicks-G2W_8eagxNQ-unsplash-2.jpg';
-import { FaBars, FaTimes } from 'react-icons/fa';
+
 import { Link } from 'react-scroll';
 
 const Navbar = () => {

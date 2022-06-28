@@ -1,5 +1,5 @@
 import React from "react";
-import WorkImg from './src/assets/Pomodorian.jpg'
+import WorkImg from "my-app/src/assets/Pomodorian.jpg"
 import SprayCan from './src/assets/SprayCan.png'
 import Regex from './src/assets/Regex.png'
 

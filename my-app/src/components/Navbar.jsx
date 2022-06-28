@@ -10,15 +10,33 @@ const Navbar = () => {
         </div> */}
 
       {/* menu */}
-    <div>
-      <ul className='flex'>
-        <li>Home</li>
-        <li>About</li>
-        <li>Portfolio</li>
-        <li>Resume</li>
-        <li>Contact</li>
+      <ul className='hidden md:flex'>
+        <li>
+          <Link to='home' smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to='about' smooth={true} duration={500}>
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to='portfolio' smooth={true} duration={500}>
+            Skills
+          </Link>
+        </li>
+        <li>
+          <Link to='resume' smooth={true} duration={500}>
+            Work
+          </Link>
+        </li>
+        <li>
+          <Link to='contact' smooth={true} duration={500}>
+            Contact
+          </Link>
+        </li>
       </ul>
-    </div>
 
     {/* hamburger */}
     <div className='hidden'>

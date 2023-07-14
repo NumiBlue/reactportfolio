@@ -1,18 +1,17 @@
-import React from 'react'
+import React from 'react';
+import {  FaLinkedinIn } from 'react-icons/fa';
 
-const Resume = () => {
+const Navbar = () => {
   return (
-    <div name='resume' className='w-full md:h-screen text-black  bg-amber-100'>
-    <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-        <div className='pb-8'>
-            <p className='text-4xl font-bold inline border-b-4 text-black border-indigo-800'>Resume</p>
-            <p className='py-6 text-indigo-800'>
-              This is where my resume will go when I have revised it to include my most recent experience.
-            </p>
-        </div>
-    </div>
-</div>
-)
-}
+    <nav className="flex justify-between items-center py-4 px-6 bg-indigo-800 text-white">
+      <div>
+        <a href="/" className="text-2xl font-bold">My Portfolio</a>
+      </div>
+      <div>
+        <a href="/" className="mr-4"><FaLinkedinIn className="text-2xl" /></a>
+      </div>
+    </nav>
+  );
+};
 
-export default Resume
+export default Navbar;

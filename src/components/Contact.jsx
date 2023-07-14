@@ -1,13 +1,29 @@
+import React from 'react'
+
+
+
 import { useState } from "react";
 
 export default function ContactForm() {
   const [loading, setLoading] = useState(false);
 
-  async function handleSubmit(event) {
-    event.preventDefault();
-    setLoading(true);
+	async function handleSubmit(event: any) {
+		event.preventDefault();
+		setLoading(true);
 
-   
+		const data = {
+			name: String(event.target.name.value),
+			email: String(event.target.email.value),
+			message: String(event.target.message.value),
+		};
+
+		const response = await fetch("/api/contact", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify(data),
+		});
 
     setLoading(false);
   }

@@ -47,7 +47,7 @@
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.4"
   },
-  "description": "This is a React site created to display my work. # Table of Contents",
+  "description": "This is a React site created to display my work.",
   "main": "postcss.config.js",
   "repository": {
     "type": "git",

@@ -1,6 +1,6 @@
 ## React Portfolio
 # Description
-This is a React site created to display my work.
+This is a React site created to display my work. It is currently under construction and does not represent recent progress. 
 # Table of Contents
 
  * [Installation](#installation)

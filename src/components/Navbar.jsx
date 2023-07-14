@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-gradient-to-r from-indigo-800 via bg-red-800 to bg-yellow-600 text-gray-300'>
        <div>
-        <img src={Image} alt='Self Image' style={{ width: '50px' }} />
+        <img src={Image} alt='Nonbinary Person with long light hair' style={{ width: '50px' }} />
       </div>
 
       {/* menu */}

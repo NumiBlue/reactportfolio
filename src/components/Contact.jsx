@@ -11,11 +11,13 @@ export default function ContactForm() {
 		event.preventDefault();
 		setLoading(true);
 
-		const data = {
-			name: String(event.target.name.value),
-			email: String(event.target.email.value),
-			message: String(event.target.message.value),
-		};
+		const { name, email, message } = event.target.elements;
+const data = {
+  name: name.value,
+  email: email.value,
+  message: message.value,
+};
+
 
 		const response = await fetch("/api/contact", {
 			method: "POST",

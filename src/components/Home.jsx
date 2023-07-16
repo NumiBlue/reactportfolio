@@ -1,12 +1,16 @@
 import React from 'react';
+import backgroundImage from '../assets/https:/photo-1561954791-05d64ce8460f.webp';
 import { FaLinkedinIn } from 'react-icons/fa';
 import Typed from 'react-typed';
+
+
 
 const Home = () => {
   return (
     <div name='home' className='w-full h-screen'>
       {/* Container */}
-      <div className='bg-cover flex flex-col justify-center text-left h-full'>
+      <div style={{backgroundImage: `url(${backgroundImage})`}}
+       className='bg-cover flex flex-col justify-center text-left h-full'>
         <br />
         <br />
         <p className='pl-40 ml-8 max-w-[1000px] px-8 text-amber-100'>Hello, my name is</p>

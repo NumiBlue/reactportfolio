@@ -1,11 +1,44 @@
-import React from 'react'
+import React from 'react';
+
+export default function ContactForm() {
+  return (
+    <div className="bg-amber-100 min-h-screen flex items-center justify-center">
+      <div className="w-full max-w-md p-6 rounded-lg shadow-md bg-black">
+        <div className="aspect-w-16 aspect-h-9">
+          <iframe
+            title="Contact Form"
+            src="https://forms.office.com/r/nckvW2KzEY?embed=true"
+            className="w-full h-full"
+            frameBorder="0"
+            allowFullScreen
+            webkitallowfullscreen
+            mozallowfullscreen
+            msallowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+
+
+
+
+
+/*import React from 'react'
 
 
 
 import { useState } from "react";
 
+
+
 export default function ContactForm() {
   const [loading, setLoading] = useState(false);
+
+  <iframe width="640px" height="480px" src="https://forms.office.com/r/nckvW2KzEY?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
 
 	async function handleSubmit(event: any) {
 		event.preventDefault();
@@ -84,4 +117,4 @@ const data = {
       </form>
     </div>
   );
-}
+}*/

@@ -7,7 +7,7 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="w-full md:h-screen text-black bg-amber-100"
+      className="w-full md:h-screen text-b[#1616D] bg-amber-100"
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">

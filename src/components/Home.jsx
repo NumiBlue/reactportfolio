@@ -24,11 +24,7 @@ const Home = () => {
           loop
         />
         <p className='pl-40 ml-8 px-8 text-amber-100 py-4 max-w-[500px]'>Hi! I'm a full-stack MERN developer and freelance web developer. I'm focusing on perfecting my skills and expanding my clientele.</p>
-        <div>
-          <a href="https://www.linkedin.com/in/hargisciara/" className='mr-4'>
-            <FaLinkedinIn className='text-2xl' />
-          </a>
-        </div>
+      
       </div>
     </div>
   );

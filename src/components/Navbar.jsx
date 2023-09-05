@@ -95,23 +95,22 @@ const Navbar = () => {
        {/* Social icons */}
        <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
         <ul>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600 rounded-tr rounded-br'>
             <a
-              className='flex justify-between items-center w-full text-orange-50'
-              href='/'
+              className='flex justify-between items-center w-full text-orange-50' href='https://www.linkedin.com/in/hargisciara/'
             >
               Linkedin <FaLinkedin size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] rounded-tr rounded-br'>
             <a
               className='flex justify-between items-center w-full text-orange-50'
-              href='/'
+              href='https://github.com/NumiBlue'
             >
               Github <FaGithub size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-500'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-500 rounded-tr rounded-br'>
             <a
               className='flex justify-between items-center w-full text-orange-50'
               href='/'
@@ -119,7 +118,7 @@ const Navbar = () => {
               Email <HiOutlineMail size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-yellow-600'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-yellow-600 rounded-tr rounded-br'>
             <a
               className='flex justify-between items-center w-full text-orange-50'
               href='/'

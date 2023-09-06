@@ -8,6 +8,7 @@ import {
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Image from '../assets/myImage.png';
+import xImage from '../assets/logo-white.png'; // Adjust the path to match your directory structure
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
@@ -110,12 +111,12 @@ const Navbar = () => {
               Github <FaGithub size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-500 rounded-tr rounded-br'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-black-800 rounded-tr rounded-br'>
             <a
               className='flex justify-between items-center w-full text-orange-50'
               href='/'
             >
-              Email <HiOutlineMail size={30} />
+              X <img src={xImage} alt="X icon" style={{width: '30px', height: 'auto'}} /> 
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-yellow-600 rounded-tr rounded-br'>

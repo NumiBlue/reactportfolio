@@ -5,7 +5,6 @@ import {
   FaGithub,
   FaLinkedin,
 } from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Image from '../assets/myImage.png';
 import xImage from '../assets/logo-white.png'; // Adjust the path to match your directory structure

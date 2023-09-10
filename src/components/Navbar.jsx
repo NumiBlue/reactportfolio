@@ -111,10 +111,10 @@ const Navbar = () => {
               Github <FaGithub size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-black-800 rounded-tr rounded-br'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-900 rounded-tr rounded-br'>
             <a
               className='flex justify-between items-center w-full text-orange-50'
-              href='/'
+              href='https://twitter.com/hargis_ciara'
             >
               X <img src={xImage} alt="X icon" style={{width: '30px', height: 'auto'}} /> 
             </a>

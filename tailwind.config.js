@@ -6,8 +6,11 @@ module.exports = {
     //adds font
     fontFamily: {
       'sans': ["Noto Sans", 'sans-serif'],
-    extend: {},
+      extend: {
+
+        scrollBehavior: ['smooth'],  // adding custom property
   },
   plugins: [],
+}
 }
 }

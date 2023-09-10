@@ -1,20 +1,65 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
-const Contact = () => {
+const ContactUs = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+		'service_je146qa', 
+		'template_onwopdd', 
+		form.current, 'MDDvgzMg015ErbHzA') // Use 'YOUR_USER_ID' instead of 'YOUR_PUBLIC_KEY'
+      .then((result) => {
+        console.log(result.text);
+		console.log("message sent");
+      })
+      .catch((error) => {
+        console.log(error.text);
+      });
+  };
+
   return (
-    <div name='contact' className='w-full h-screen bg-yellow-300 flex justify-center items-center p-4'>
-        <form method='POST' action="https://getform.io/f/a699a1b2-f225-434e-b317-1fbbde8e006c" className='flex flex-col max-w-[600px] w-full'>
-            <div className='pb-8'>
-                <p className='text-4xl font-bold inline border-b-4 border-indigo-800 text-gray-300'>Contact</p>
-                <p className='text-gray-300 py-4'> Submit the form below or shoot me an email - chhargis@gmail.com</p>
-            </div>
-            <input className='bg-[#ccd6f6] p-2' type="text" placeholder='Name' name='name' />
-            <input className='my-4 p-2 bg-[#ccd6f6]' type="email" placeholder='Email' name='email' />
-            <textarea className='bg-[#ccd6f6] p-2' name="message" rows="10" placeholder='Message'></textarea>
-            <button className='text-white border-2 hover:bg-indigo-800 hover:border-indigo-800 px-4 py-3 my-8 mx-auto flex items-center'>Shoot Me a Message!</button>
+  <div className="bg-amber-100 min-h-screen flex items-center justify-center">
+    <div className="w-full max-w-md p-6 rounded-lg shadow-md bg-black border border-gray-800 text-grey-800">
+      <div className="aspect-w-16 aspect-h-9">
+        <form ref={form} onSubmit={sendEmail} className="space-y-4">
+          <div className="flex flex-col items-center">
+            <label className="text-center">Name</label>
+            <input
+              type="text"
+              name="user_name"
+              className="bg-amber-100 border border-gray-800 rounded-md p-2 focus:outline-none focus:ring focus:border-amber-100 w-full"
+            />
+          </div>
+          <div className="flex flex-col items-center">
+            <label className="text-center">Email</label>
+            <input
+              type="email"
+              name="user_email"
+              className=" bg-amber-100 border border-gray-800 rounded-md p-2 focus:outline-none focus:ring focus:border-amber-100 w-full"
+            />
+          </div>
+          <div className="flex flex-col items-center">
+            <label className="text-center">Message</label>
+            <textarea
+              name="message"
+              className="bg-amber-100 border border-gray-800 rounded-md p-2 focus:outline-none focus:ring focus:border-amber-100 w-full"
+            />
+          </div>
+          <div className="flex justify-center">
+            <input
+              type="submit"
+              value="Send"
+              className="bg-indigo-800 text-grey-800 px-4 py-2 rounded"
+            />
+          </div>
         </form>
-        </div>
-  )
-}
+      </div>
+    </div>
+  </div>
+);
+};
 
-export default Contact
+export default ContactUs; // Export the component properly

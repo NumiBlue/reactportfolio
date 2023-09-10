@@ -4,21 +4,19 @@ import {
   FaTimes,
   FaGithub,
   FaLinkedin,
-  FaFacebook,
-  FaLinkedinIn,
 } from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Image from '../assets/myImage.png';
+import xImage from '../assets/logo-white.png'; // Adjust the path to match your directory structure
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-gradient-to-r from-indigo-800 via bg-red-800 to bg-yellow-600 text-gray-300'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-gradient-to-r from-indigo-800 via bg-red-800 to bg-yellow-600 text-amber-100'>
        <div>
-        <img src={Image} alt='Self Image' style={{ width: '50px' }} />
+        <img src={Image} alt='Nonbinary Person with long light hair' style={{ width: '50px' }} />
       </div>
 
       {/* menu */}
@@ -31,11 +29,6 @@ const Navbar = () => {
         <li>
           <Link to='about' smooth={true} duration={500}>
             About
-          </Link>
-        </li>
-        <li>
-          <Link to='portfolio' smooth={true} duration={500}>
-            Skills
           </Link>
         </li>
         <li>
@@ -76,18 +69,12 @@ const Navbar = () => {
         <li className='py-6 text-4xl'>
           {' '}
           <Link onClick={handleClick} to='resume' smooth={true} duration={500}>
-            Resume
-          </Link>
-        </li>
-        <li className='py-6 text-4xl'>
-          {' '}
-          <Link onClick={handleClick} to='portfolio' smooth={true} duration={500}>
             Portfolio
           </Link>
         </li>
         <li className='py-6 text-4xl'>
           {' '}
-          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
+          <Link onClick={handleClick} to='portfolio' smooth={true} duration={500}>
             Contact
           </Link>
         </li>
@@ -97,33 +84,32 @@ const Navbar = () => {
        {/* Social icons */}
        <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
         <ul>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600 rounded-tr rounded-br'>
             <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='/'
+              className='flex justify-between items-center w-full text-orange-50' href='https://www.linkedin.com/in/hargisciara/'
             >
               Linkedin <FaLinkedin size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] rounded-tr rounded-br'>
             <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='/'
+              className='flex justify-between items-center w-full text-orange-50'
+              href='https://github.com/NumiBlue'
             >
               Github <FaGithub size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-500'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-900 rounded-tr rounded-br'>
             <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='/'
+              className='flex justify-between items-center w-full text-orange-50'
+              href='https://twitter.com/hargis_ciara'
             >
-              Email <HiOutlineMail size={30} />
+              X <img src={xImage} alt="X icon" style={{width: '30px', height: 'auto'}} /> 
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-yellow-600'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-yellow-600 rounded-tr rounded-br'>
             <a
-              className='flex justify-between items-center w-full text-gray-300'
+              className='flex justify-between items-center w-full text-orange-50'
               href='/'
             >
               Resume <BsFillPersonLinesFill size={30} />
